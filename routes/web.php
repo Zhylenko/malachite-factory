@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 //Home page
-Route::get('/', 'App\Http\Controllers\Homecontroller@index')
+Route::get('/', 'App\Http\Controllers\HomeController@index')
 	->name('index');
+
+//Send contact form
+Route::post('/contact/send', 'App\Http\Controllers\ContactController@send')
+	->name('contact.send');
+
+//Calculator form
+Route::post('/calculator/send', 'App\Http\Controllers\CalculatorController@send')
+	->name('calculator.send');
