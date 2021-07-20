@@ -18,9 +18,9 @@ Route::get('/', 'App\Http\Controllers\HomeController@index')
 	->name('index');
 
 //Send contact form
-Route::post('/contact/send', 'App\Http\Controllers\ContactController@send')
+Route::get('/contact/send', 'App\Http\Controllers\ContactController@send')
 	->name('contact.send');
 
 //Calculator form
-Route::post('/calculator/send', 'App\Http\Controllers\CalculatorController@send')
+Route::get('/calculator/send', 'App\Http\Controllers\CalculatorController@send')
 	->name('calculator.send');
