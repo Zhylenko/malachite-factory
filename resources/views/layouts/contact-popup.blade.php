@@ -14,7 +14,7 @@
 
             <div class="input-wrapper">
                 <div class="form__group">
-                    <input class="modal-input" type="text" name="name" autocomplete="off" required />
+                    <input class="modal-input _req" type="text" name="name" autocomplete="off" required />
                     <label class="label-name" for="name">
                         <span class="label__content">Ім’я</span>
                     </label>
@@ -24,7 +24,7 @@
 
             <div class="input-wrapper">
                 <div class="form__group">
-                    <input class="modal-input" type="tel" name="phone" autocomplete="off" required />
+                    <input class="modal-input _req" type="tel" name="phone" autocomplete="off" required />
                     <label class="label-name" for="phone">
                         <span class="label__content">Телефон</span>
                     </label>
@@ -34,7 +34,7 @@
 
             <div class="input-wrapper text-wrapper">
                 <div class="form__group text-group">
-                    <textarea rows="1" class="textarea" name="message" id="textarea"></textarea>
+                    <textarea rows="1" class="textarea _req" name="message" id="textarea"></textarea>
                     <label class="label-name" for="phone">
                         <span class="label__content">Якою ви бачите свою вивіску?</span>
                     </label>
