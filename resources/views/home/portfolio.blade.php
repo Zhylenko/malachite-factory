@@ -14,7 +14,7 @@
                                 @foreach($works as $work)    
                                 <div class="portfolio__slide swiper-slide">
                                     <div class="porfolio__slider-image">
-                                        <img src="{{ asset('img/works/' . $work->image . '') }}" alt="work">
+                                        <img src="{{ asset('img/works/' . $work->image ) }}" alt="work">
 
                                         <div class="portfolio__block">
                                             <div class="portfolio__block-title">

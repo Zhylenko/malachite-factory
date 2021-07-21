@@ -13,7 +13,7 @@ class HomeController extends Controller
 {
     public function index(Request $request)
     {
-        $works   = Work::limit('works.portfolio.limit')->get();
+        $works   = Work::limit(config('works.portfolio.limit'))->get();
         $types   = Type::all();
         $fonts   = Font::all();
         $places  = Place::all();

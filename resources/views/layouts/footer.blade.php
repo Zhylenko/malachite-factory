@@ -17,7 +17,7 @@
                     <div class="footer__copyright-powered">
                         Powered by
                         <span>
-                            <a class="footer__powered-link" href="{{ __('developer.url') }}">{{ __('developer.name') }}</a>
+                            <a class="footer__powered-link" href="{{ __('content.developer.url') }}">{{ __('content.developer.name') }}</a>
                         </span>
                     </div>
                 </div>
