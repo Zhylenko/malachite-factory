@@ -14,7 +14,7 @@
                                 @foreach($works as $work)    
                                 <div class="portfolio__slide swiper-slide">
                                     <div class="porfolio__slider-image">
-                                        <img src="{{ asset('img/works/' . $work->image . '') }}" alt="image">
+                                        <img src="{{ asset('img/works/' . $work->image . '') }}" alt="work">
 
                                         <div class="portfolio__block">
                                             <div class="portfolio__block-title">
@@ -35,10 +35,10 @@
                         </div>
     
                         <div class="prev-btn">
-                            <img src="{{ asset('img/images/arrow.svg') }}" alt="arrow">
+                            <img src="{{ asset('img/arrow.svg') }}" alt="arrow">
                         </div>
                         <div class="next-btn">
-                            <img src="{{ asset('img/images/arrow.svg') }}" alt="arrow">
+                            <img src="{{ asset('img/arrow.svg') }}" alt="arrow">
                         </div>
     
                     </div>

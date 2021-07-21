@@ -1,7 +1,7 @@
 @include('layouts.contact-popup')
-@include('layouts.calculator-popup')
+@include('layouts.calculator-popup', ['types' => $types, 'fonts' => $fonts, 'places' => $places])
 
-@section('content')
+@section('modals')
     @yield('contact-popup')
     @yield('calculator-popup')
 @endsection

@@ -1,6 +1,7 @@
 @include('layouts.header')
 @include('layouts.footer')
 @include('layouts.scripts')
+@include('layouts.call-button')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +17,8 @@
     
 	<!-- Main Styles -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.min.css') }}">
+	<!-- Swiper Styles -->
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/swiper-bundle.min.css') }}">
 
 	@yield('styles')
 </head>
@@ -28,12 +31,15 @@
 		@yield('modals')
     </section>
 	@endif
+	
 	<!-- Main Section -->
     <main class="main">
 	@yield('content')
 	</main>
 
 	@yield('footer')
+
+	@yield('call-button')
 
 	@yield('scripts')
 </body>

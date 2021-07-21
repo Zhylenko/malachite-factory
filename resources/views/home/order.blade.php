@@ -1,4 +1,4 @@
-@section('contact')
+@section('order')
         <!-- Booking -->
         <article class="booking" id="booking">
             <div class="container">
@@ -14,7 +14,7 @@
                     <ul class="booking__list">
                         <li class="booking__list-item">
                             <div class="booking__list-logo">
-                                <img src="{{ asset('img/list/list-1.svg') }}" alt="logo">
+                                <img src="{{ asset('img/list/list-1.svg') }}" alt="phone-logo">
                             </div>
                             <div class="booking__list-title">Заявка</div>
                             <div class="booking__list-text">Натисніть нижче кнопку “Замовити” і введіть усю інформацію, яка потребується для подальшого зв’язку та виготовлення замовлення.</div>
@@ -22,7 +22,7 @@
 
                         <li class="booking__list-item">
                             <div class="booking__list-logo">
-                                <img src="{{ asset('img/list/list-2.svg') }}" alt="logo">
+                                <img src="{{ asset('img/list/list-2.svg') }}" alt="payment-logo">
                             </div>
                             <div class="booking__list-title">Оплата</div>
                             <div class="booking__list-text">Перед початком виготовлення сплачується 50% від вартості виробу. Друга частина суми доплачується перед відправкою або при отриманні товару. Оплата здіснюється на картку ПриватБанку.</div>
@@ -30,7 +30,7 @@
 
                         <li class="booking__list-item">
                             <div class="booking__list-logo">
-                                <img src="{{ asset('img/list/list-3.svg') }}" alt="logo">
+                                <img src="{{ asset('img/list/list-3.svg') }}" alt="creating-logo">
                             </div>
                             <div class="booking__list-title">Виготовлення</div>
                             <div class="booking__list-text">Використовуються якісні, перевірені матеріали.Будь-який текст, логотип чи малюнок виготовляються від 3 до 7 робочих днів, залежить від складності виробу.</div>
@@ -38,7 +38,7 @@
 
                         <li class="booking__list-item">
                             <div class="booking__list-logo">
-                                <img src="{{ asset('img/list/list-4.svg') }}" alt="logo">
+                                <img src="{{ asset('img/list/list-4.svg') }}" alt="delivery-logo">
                             </div>
                             <div class="booking__list-title">Доставка</div>
                             <div class="booking__list-text">Коли виріб повністю готовий, він проходить перевірку на працездатність. І тільки після підтвердження якості формується відправка замовнику.Доставка здійснюється Новою Поштою.</div>
