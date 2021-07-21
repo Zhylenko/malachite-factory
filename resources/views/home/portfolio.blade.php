@@ -20,7 +20,7 @@
                                             <div class="portfolio__block-title">
                                                 {{ $work->description }}
                                             </div>
-                                            <a class="portfolio__block-social" href="{{ $work->url }}">
+                                            <a class="portfolio__block-social" href="{{ ($work->url !== null) ? $work->url : __('content.social.instagram.url') }}">
                                                 <img src="{{ asset('img/insta.svg') }}" alt="instagram-logo">
                                             </a>
                                             <div class="portfolio__block-price">

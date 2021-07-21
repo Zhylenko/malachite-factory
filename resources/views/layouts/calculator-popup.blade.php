@@ -48,7 +48,7 @@
                 <div class="form__group">
                     <input class="modal-input _req" type="text" name="width" autocomplete="off" required />
                     <label class="label-name" for="width">
-                        <span class="label__content">Ширина, мм</span>
+                        <span class="label__content">Ширина, см</span>
                     </label>
                 </div>
                 <div class="form-error"></div>
@@ -58,7 +58,7 @@
                 <div class="form__group">
                     <input class="modal-input _req" type="text" name="height" autocomplete="off" required />
                     <label class="label-name" for="height">
-                        <span class="label__content">Висота, мм</span>
+                        <span class="label__content">Висота, см</span>
                     </label>
                 </div>
                 <div class="form-error"></div>
