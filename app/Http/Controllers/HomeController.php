@@ -15,7 +15,7 @@ class HomeController extends Controller
     {
         $works   = Work::limit(config('works.portfolio.limit'))->get();
         $types   = Type::all();
-        $fonts   = Font::all();
+        $fonts   = Font::orderBy('name', 'asc')->get();
         $places  = Place::all();
 
         return view('home.index', [
