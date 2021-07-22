@@ -34,8 +34,8 @@
 
             <div class="input-wrapper">
                 <div class="form__group select-group">
-                    <select class="form-select _req" name="picture">
-                        <option selected hidden>Виберіть тип виробу</option>
+                    <select class="form-select _req" name="picture" required>
+                        <option value="" hidden disabled selected>Виберіть тип виробу</option>
                         @foreach($types as $type)
                         <option value="{{ $type->name }}">{{ $type->name }}</option>
                         @endforeach
@@ -66,8 +66,8 @@
 
             <div class="input-wrapper">
                 <div class="form__group select-group">
-                    <select class="form-select _req" name="fonts">
-                        <option selected hidden>Виберіть шрифт</option>
+                    <select class="form-select _req" name="fonts" required>
+                        <option value="" hidden disabled selected>Виберіть шрифт</option>
                         @foreach($fonts as $font)
                         <option value="{{ $font->name }}">{{ $font->name }}</option>
                         @endforeach
@@ -78,8 +78,8 @@
 
             <div class="input-wrapper">
                 <div class="form__group select-group">
-                    <select class="form-select _req" name="place">
-                        <option selected hidden>Виберіть місце</option>
+                    <select class="form-select _req" name="place" required>
+                        <option value="" hidden disabled selected>Виберіть місце</option>
                         @foreach($places as $place)
                         <option value="{{ $place->name }}">{{ $place->name }}</option>
                         @endforeach
