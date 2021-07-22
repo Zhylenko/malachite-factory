@@ -15,7 +15,7 @@
 <body style="margin: 0; padding: 0;">
     <!-- Content -->
     <div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;"> @yield('title') </div>
-	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#222222">
+	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#82828f">
         <tr>
             <td>
                 <table class="main table-600" cellpadding="0" cellspacing="0" width="600" align="center">
@@ -23,18 +23,24 @@
                         <td height="30" width="600"></td>
                     </tr>
                     <tr>
-                        <td class="content" bgcolor="#222222" style="padding-top: 20px; padding-bottom: 50px; box-shadow: 0px 5px 10px -2px #000000;">
+                        <td class="header-td" bgcolor="#1C1C1C">
                             <table class="table-480" cellpadding="0" cellspacing="0" width="480" align="center">
                                 <tr>
-                                    <td class="logo" align="center">
+                                <td class="logo" align="center">
                                         <a href="{{ Route('index') }}" title="" target="_blank">
                                             <img width="150" src="{{ Route('index') }}/img/logo-png.png" alt="logo" style="margin-top: 20px; margin-bottom: 20px;" />
                                         </a>
                                     </td>
                                 </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="content" bgcolor="#FAF0E6" style="padding-top: 20px; padding-bottom: 50px; box-shadow: 0px 5px 10px -2px #000000;">
+                            <table class="table-480" cellpadding="0" cellspacing="0" width="480" align="center">
                                 <tr>
                                     <td class="title" align="center">
-                                        <h1 style="font-size: 32px; color: #FAF0E6; padding-bottom: 20px;">
+                                        <h1 style="font-size: 32px; color: #1C1C1C; padding-bottom: 20px;">
                                             @yield('title')
                                         </h1>
                                     </td>

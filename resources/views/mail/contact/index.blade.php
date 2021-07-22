@@ -4,8 +4,8 @@
 
 @section('content')
 <tr>
-    <td class="code-bg" bgcolor="#222222">
-        <table class="form-320" cellpadding="0" cellspacing="0" width="460" align="center" style="color: #FAF0E6;">
+    <td class="code-bg" bgcolor="#FAF0E6">
+        <table class="form-320" cellpadding="0" cellspacing="0" width="460" align="center" style="color: #1C1C1C;">
             <tr>
                 <td class="item" align="left">
                     <h3 class="text" style="font-size: 16px;">
