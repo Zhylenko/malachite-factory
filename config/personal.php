@@ -11,7 +11,7 @@ return [
     'mail' => [
         'to' => [
             'zhylenko.vlad@gmail.com',
-            //'malachite.factory@gmail.com',
+            'malachite.factory@gmail.com',
         ],
     ],
 ];
