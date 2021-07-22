@@ -46,7 +46,7 @@
 
             <div class="input-wrapper">
                 <div class="form__group">
-                    <input class="modal-input _req" type="text" name="width" autocomplete="off" required />
+                    <input class="modal-input _req" type="number" name="width" autocomplete="off" required />
                     <label class="label-name" for="width">
                         <span class="label__content">Ширина, см</span>
                     </label>
@@ -56,7 +56,7 @@
 
             <div class="input-wrapper">
                 <div class="form__group">
-                    <input class="modal-input _req" type="text" name="height" autocomplete="off" required />
+                    <input class="modal-input _req" type="number" name="height" autocomplete="off" required />
                     <label class="label-name" for="height">
                         <span class="label__content">Висота, см</span>
                     </label>
