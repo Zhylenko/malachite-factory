@@ -21,6 +21,18 @@
             <tr>
                 <td class="item" align="left">
                     <h3 class="text" style="font-size: 16px;">
+                        Телефон:
+                    </h3>
+                </td>
+                <td class="input" align="left">
+                    <p style="font-size: 14px; padding-left: 90px;">
+                        {{ $phone }}
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="item" align="left">
+                    <h3 class="text" style="font-size: 16px;">
                         Тип виробу:
                     </h3>
                 </td>
