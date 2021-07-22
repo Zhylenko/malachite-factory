@@ -47,7 +47,7 @@
                             </p>
                         </div>
 
-                        <button class="idea__desc-btn modal-price">Розрахувати вартіть</button>
+                        <button class="idea__desc-btn modal-price">Розрахувати вартicть</button>
 
                     </div>
 

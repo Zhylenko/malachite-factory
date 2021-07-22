@@ -4,7 +4,7 @@
                             <a class="menu__list-link" href="{{ !Route::is('index') ? Route('index') : ''}}{{ asset('#about') }}">Про нас</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="{{ !Route::is('index') ? Route('index') : ''}}{{ asset('#portfolio') }}">Портфоліо</a>
+                            <a class="menu__list-link" href="{{ !Route::is('index') ? Route('index') : ''}}{{ asset('#portfolio') }}">Портфолiо</a>
                         </li>
                         <li class="empty">
                             <div class="empty-div"></div>

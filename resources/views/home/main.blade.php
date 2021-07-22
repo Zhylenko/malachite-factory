@@ -22,7 +22,7 @@
     
                         <div class="main__info-buttons">
                             <button class="main__info-btn purple-btn modal-price">
-                                Розрахувати вартість
+                                Розрахувати вартiсть
                             </button>
     
                             <button class="main__info-btn purple-btn modal-booking">
