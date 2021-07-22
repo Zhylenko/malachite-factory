@@ -37,7 +37,7 @@
                     <select class="form-select _req" name="type" required>
                         <option value="" hidden disabled selected>Виберіть тип виробу</option>
                         @foreach($types as $type)
-                        <option value="{{ $type->name }}">{{ $type->type }}</option>
+                        <option value="{{ $type->type }}">{{ $type->type }}</option>
                         @endforeach
                     </select>
                 </div>
@@ -69,7 +69,7 @@
                     <select class="form-select _req" name="font" required>
                         <option value="" hidden disabled selected>Виберіть шрифт</option>
                         @foreach($fonts as $font)
-                        <option value="{{ $font->name }}">{{ $font->font }}</option>
+                        <option value="{{ $font->font }}">{{ $font->font }}</option>
                         @endforeach
                     </select>
                 </div>
@@ -81,7 +81,7 @@
                     <select class="form-select _req" name="place" required>
                         <option value="" hidden disabled selected>Виберіть місце</option>
                         @foreach($places as $place)
-                        <option value="{{ $place->name }}">{{ $place->place }}</option>
+                        <option value="{{ $place->place }}">{{ $place->place }}</option>
                         @endforeach
                     </select>
                 </div>
