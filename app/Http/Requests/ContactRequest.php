@@ -25,7 +25,7 @@ class ContactRequest extends FormRequest
     {
         return [
             'name'      => 'bail|required|min:2|max:128|string',
-            'phone'     => 'bail|required|regex:/\+?(?:38)?0\d{9}/',
+            'phone'     => 'bail|required|regex:/\+?(?:38)?\(0\d{2}\)\-\d{3}\-\d{4}/',
             'message'   => 'bail|required|min:24|max:1024',
         ];
     }

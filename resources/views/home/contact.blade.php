@@ -21,7 +21,7 @@
                                 </div>
                                 
                                 <div class="footer__social-link">
-                                    {{ __('content.phone') }}
+                                    {{ __('content.email') }}
                                 </div>
                             </a>
                         </div>

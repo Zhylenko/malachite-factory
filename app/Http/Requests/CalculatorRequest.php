@@ -25,12 +25,12 @@ class CalculatorRequest extends FormRequest
     {
         return [
             'name'      => 'bail|required|min:2|max:128|string',
-            'phone'     => 'bail|required|regex:/\+?(?:38)?0\d{9}/',
+            'phone'     => 'bail|required|regex:/\+?(?:38)?\(0\d{2}\)\-\d{3}\-\d{4}/',
             'type'      => 'bail|required|exists:types,name',
             'width'     => 'bail|required|numeric|min:1',
             'height'    => 'bail|required|numeric|min:1',
             'font'      => 'bail|required|exists:fonts,name',
-            'place'     => 'bail|required|exists:places,name',
+            'place'     => 'bail|required|exists:places',
         ];
     }
 }

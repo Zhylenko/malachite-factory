@@ -102,7 +102,7 @@ return [
     'prohibited_unless'    => 'Поле :attribute заборонено, якщо тільки :other не знаходиться в :values.',
     'regex'                => 'Поле :attribute має хибний формат.',
     'relatable'            => 'Цей :attribute може бути не пов\'язаний з цим ресурсом.',
-    'required'             => 'Поле :attribute є обов\'язковим для заповнення.',
+    'required'             => 'Поле обов\'язкове для заповнення.',
     'required_if'          => 'Поле :attribute є обов\'язковим для заповнення, коли :other є рівним :value.',
     'required_unless'      => 'Поле :attribute є обов\'язковим для заповнення, коли :other відрізняється від :values',
     'required_with'        => 'Поле :attribute є обов\'язковим для заповнення, коли :values вказано.',
