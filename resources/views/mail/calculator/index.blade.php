@@ -30,6 +30,20 @@
                     </p>
                 </td>
             </tr>
+            @if($text !== null)
+            <tr>
+                <td class="item" align="left">
+                    <h3 class="text" style="font-size: 16px;">
+                        Текст:
+                    </h3>
+                </td>
+                <td class="input" align="left">
+                    <p style="font-size: 14px; padding-left: 90px;">
+                        {{ $text }}
+                    </p>
+                </td>
+            </tr>
+            @endif
             <tr>
                 <td class="item" align="left">
                     <h3 class="text" style="font-size: 16px;">
@@ -66,6 +80,7 @@
                     </p>
                 </td>
             </tr>
+            @if($font !== null)
             <tr>
                 <td class="item" align="left">
                     <h3 class="text" style="font-size: 16px;">
@@ -78,6 +93,7 @@
                     </p>
                 </td>
             </tr>
+            @endif
             <tr>
                 <td class="item" align="left">
                     <h3 class="text" style="font-size: 16px;">

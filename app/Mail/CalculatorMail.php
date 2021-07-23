@@ -15,7 +15,7 @@ class CalculatorMail extends Mailable
 
     public $subject;
 
-    protected $data;
+    protected $data, $path;
 
     /**
      * Create a new message instance.
@@ -26,6 +26,7 @@ class CalculatorMail extends Mailable
     {
         $this->subject  = __('mail.subjects.calculator');
         $this->data     = $request;
+        $this->path     = config('calculator.path.upload');
     }
 
     /**
@@ -37,19 +38,26 @@ class CalculatorMail extends Mailable
     {
         $data       = $this->data;
         $subject    = $this->subject;
+        $image      = ($data->image !== null) ? $this->path . $data->image : null;
 
-        return $this->view('mail.calculator.index')
-                    ->attachFromStorage('/uploads/images/' . $data->message)
-                    ->with([
-                        'title'     => $subject,
-                        'name'      => $data->name,
-                        'phone'     => $data->phone,
-                        'type'      => $data->type,
-                        'width'     => $data->width,
-                        'height'    => $data->height,
-                        'font'      => $data->font,
-                        'place'     => $data->place,
-                    ])
-                    ->subject($subject);
+        $view = $this->view('mail.calculator.index')
+            ->with([
+                'title'     => $subject,
+                'name'      => $data->name,
+                'phone'     => $data->phone,
+                'text'      => $data->message,
+                'type'      => $data->type,
+                'width'     => $data->width,
+                'height'    => $data->height,
+                'font'      => $data->font,
+                'place'     => $data->place,
+            ])
+            ->subject($subject);
+
+        if ($image !== null) {
+            return $view->attach($image);
+        } else {
+            return $view;
+        }
     }
 }

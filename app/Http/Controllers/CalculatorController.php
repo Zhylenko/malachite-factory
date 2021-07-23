@@ -24,16 +24,14 @@ class CalculatorController extends Controller
 
         if ($request->image !== null) {
             $image          = $request->file('image');
-            $path           = storage_path() . '/uploads/images/';
+            $path           = config('calculator.path.upload');
 
             $fileExtention  = $image->getClientOriginalExtension();
-            $fileName       = $image->getClientOriginalName();
-            $fileName       = password_hash($fileName, PASSWORD_BCRYPT);
-            $fileName       = substr($fileName, -8) . $fileExtention;
+            $fileName       = $this->generateName() . '.' . $fileExtention;
 
             $image->move($path, $fileName);
 
-            $request->message = $fileName;
+            $request->image = $fileName;
         }
 
 
@@ -42,5 +40,19 @@ class CalculatorController extends Controller
 
         Mail::to(config('personal.mail.to'))
             ->send(new CalculatorMail($request));
+    }
+
+    protected function generateName($length = 16)
+    {
+        $alphabet   = "abcdefghijklmnopqrstuvwxyz0123456789";
+        $alphabetLength = strlen($alphabet);
+        $name   = "";
+
+        for ($i = 0; $i < $length; $i++) { 
+            str_shuffle($alphabet);
+            $name .= $alphabet[rand(0, ($alphabetLength - 1))];
+        }
+
+        return $name;
     }
 }

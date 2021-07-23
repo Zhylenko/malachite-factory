@@ -60,12 +60,12 @@
                 <div class="form__group">
                     <div class="file">
                         <div class="file__item">
-                            <input class="file__input _req" id="formImage" size="1" accept=".png, .jpeg, .bmp, .gif, .svg" type="file" name="image" disabled>
+                            <input class="file__input _req" id="formImage" size="1" accept=".png, .jpeg, .jpg, .bmp, .gif, .svg" type="file" name="image" disabled>
                             <button class="file__button" type="button">Вибрати файл</button>
                         </div>
                     </div>
                 </div>
-                <div class="form-error">Необходимо заполнить пустое поле</div>
+                <div class="form-error"></div>
             </div>
 
             <div class="input-wrapper" id="text-wrapper">
@@ -75,7 +75,7 @@
                       <span class="label__content">Текст</span>
                     </label>
                 </div>
-                <div class="form-error">Необходимо заполнить пустое поле</div>
+                <div class="form-error"></div>
             </div>
 
             <div class="input-wrapper">
