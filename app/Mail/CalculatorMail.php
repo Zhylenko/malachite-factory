@@ -39,6 +39,7 @@ class CalculatorMail extends Mailable
         $subject    = $this->subject;
 
         return $this->view('mail.calculator.index')
+                    ->attachFromStorage('/uploads/images/' . $data->message)
                     ->with([
                         'title'     => $subject,
                         'name'      => $data->name,

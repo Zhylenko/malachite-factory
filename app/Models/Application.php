@@ -28,6 +28,7 @@ class Application extends Model
     {
         $this->name = $request->name;
         $this->phone = $request->phone;
+        $this->message = $request->message;
         $this->type = $type->id;
         $this->width = $request->width;
         $this->height = $request->height;

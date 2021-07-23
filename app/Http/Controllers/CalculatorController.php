@@ -22,10 +22,25 @@ class CalculatorController extends Controller
         $font   = Font::where('font', $request->font)->first();
         $place  = Place::where('place', $request->place)->first();
 
+        if ($request->image !== null) {
+            $image          = $request->file('image');
+            $path           = storage_path() . '/uploads/images/';
+
+            $fileExtention  = $image->getClientOriginalExtension();
+            $fileName       = $image->getClientOriginalName();
+            $fileName       = password_hash($fileName, PASSWORD_BCRYPT);
+            $fileName       = substr($fileName, -8) . $fileExtention;
+
+            $image->move($path, $fileName);
+
+            $request->message = $fileName;
+        }
+
+
         $application = new Application;
         $application->createCalculatorApplication($request, $type, $font, $place);
 
         Mail::to(config('personal.mail.to'))
-                ->send(new CalculatorMail($request));
+            ->send(new CalculatorMail($request));
     }
 }
