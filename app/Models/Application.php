@@ -24,15 +24,15 @@ class Application extends Model
         return $this;
     }
 
-    public function createCalculatorApplication(CalculatorRequest $request)
+    public function createCalculatorApplication(CalculatorRequest $request, Type $type, Font $font, Place $place)
     {
         $this->name = $request->name;
         $this->phone = $request->phone;
-        $this->type = $request->type;
+        $this->type = $type->id;
         $this->width = $request->width;
         $this->height = $request->height;
-        $this->font = $request->font;
-        $this->place = $request->place;
+        $this->font = $font->id;
+        $this->place = $place->id;
         $this->ip = $request->ip();
 
         $this->save();
