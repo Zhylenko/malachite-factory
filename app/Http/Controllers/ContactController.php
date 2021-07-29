@@ -18,6 +18,8 @@ class ContactController extends Controller
         $application = new Application;
         $application->createContactApplication($request);
 
+        \LaravelFacebookPixel::createEvent('Contact');
+
         Mail::to(config('personal.mail.to'))
                 ->send(new ContactMail($request));
     }

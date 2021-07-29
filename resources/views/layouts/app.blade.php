@@ -21,8 +21,12 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/swiper-bundle.min.css') }}">
 
 	@yield('styles')
+
+	@include('facebook-pixel::head')
 </head>
 <body>
+	@include('facebook-pixel::body')
+
     @yield('header')
 
 	@hasSection('modals')

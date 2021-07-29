@@ -38,6 +38,8 @@ class CalculatorController extends Controller
         $application = new Application;
         $application->createCalculatorApplication($request, $type, $font, $place);
 
+        \LaravelFacebookPixel::createEvent('Lead');
+
         Mail::to(config('personal.mail.to'))
             ->send(new CalculatorMail($request));
     }
