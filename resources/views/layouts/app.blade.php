@@ -3,6 +3,8 @@
 @include('layouts.scripts')
 @include('layouts.call-button')
 
+@include('layouts.google-analytics', ['id' => 'G-NC13ZYZXX7'])
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,6 +25,8 @@
 	@yield('styles')
 
 	@include('facebook-pixel::head')
+	
+	@yield('google-analytics')
 </head>
 <body>
 	@include('facebook-pixel::body')
