@@ -4,6 +4,8 @@
 @include('layouts.call-button')
 
 @include('layouts.google-analytics', ['id' => 'G-NC13ZYZXX7'])
+@include('layouts.gtm-head', ['id' => 'GTM-59NMKBZ'])
+@include('layouts.gtm-body', ['id' => 'GTM-59NMKBZ'])
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,9 +29,11 @@
 	@include('facebook-pixel::head')
 	
 	@yield('google-analytics')
+	@yield('gtm-head')
 </head>
 <body>
 	@include('facebook-pixel::body')
+	@yield('gtm-body')
 
     @yield('header')
 
